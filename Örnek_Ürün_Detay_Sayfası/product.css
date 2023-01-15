@@ -1,0 +1,170 @@
+.ürün{
+  border: 1px ridge rgb(233, 233, 233) ;
+  border-radius: 10px;
+  padding: 10px;
+  width: 60%;
+  height: 1280px;
+  background: white;
+  position: relative;
+  top: 100px;
+  left: 20%;
+}
+.product-gallery {
+    display: flex;
+    float: left;
+    min-width: 300px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px groove rgb(233, 233, 233);
+    border-radius: 5px;
+    padding: 10px;
+    width: 45%;
+    height: auto;
+  }
+  .kucukfotolar img{
+    height: 75px;
+    width: 75px;
+    border: 1px solid rgb(214, 214, 214);
+    object-fit: contain;
+    cursor: pointer;
+  }
+  .kucukfotolar img:hover {
+    border: 1px solid rgba(0,0,0, 0.2);
+  }
+  .buyukfoto img{
+    width: 100%;
+    height: auto;
+  }
+  
+  #product-gallery img {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-position: center;
+  }
+
+
+  
+  .product-descriptions
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    float: left;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+  }
+  #check{
+    display: none;
+  }
+  .content{
+    display: none;
+    transition: 0.5s linear;
+  }
+  label{
+    display: inline-block;
+    margin-left: 190px;
+    margin-top: 5px;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  #check:checked ~ .content{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  #check:checked ~ label{
+    display: none;
+  }
+  #check:checked ~ label{
+    display: block;
+    visibility: visible;
+  }
+
+.buton{
+  background-color: rgb(196, 107, 255);
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+  #favori{
+    width: 55px;
+    height: 55px;
+    border: 2px solid lightgrey;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    margin-right: 35px;
+    color: gray;
+  }
+  #sepet{
+    width: 400px;
+    height: 55px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 10px;
+  }
+  #koleksiyon{
+    font-size: 13px;
+    position: absolute;
+    right: 35px;
+    background-color: white;
+  }
+.buton:hover{
+  background-color: rgb(214, 155, 253);
+}
+#koleksiyon:hover{
+  color: rgb(214, 155, 253);
+}
+#favori:hover{
+  color: rgb(196, 107, 255);
+}
+
+.title{
+  font-family: 'Roboto', sans-serif;
+}
+  #anabaslik{
+    font-size: 18px;
+  }
+  #fiyat{
+    font-size: 28px;
+    font-family: 'Jost', sans-serif;
+  }
+#benzer_ürünler{
+  margin-top: 30px;
+  float: left;
+  border: 1px solid lightgrey;
+  width: 1110px;
+  height: 250px;
+
+}
+#yorumlar{
+  margin-top: 55px;
+  float: left;
+  border: 1px solid lightgray;
+  width: 1110px;
+  height: 250px;
+}
+
+@media screen and (max-width: 800px) {
+  .ürün {
+    width: 33.33%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ürün {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .ürün {
+    width: 100%;
+  }
+}
+img {
+  max-width: 100%;
+}
